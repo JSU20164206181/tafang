@@ -167,9 +167,12 @@ public class YouxiWindow  {
 				new Color(0, 255, 0), Color.GREEN));
 		ta4.setIcon((Picture.imgta4));
 		ta4.setBounds(852, 612, 60, 70);
+		
 		contentPane.add(ta4);
-		Xianlu.luxian();
+		
+		
 		beijin = new JLabel(Picture.imgditu);
+		Xianlu.luxian();
 		beijin.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {

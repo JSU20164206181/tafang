@@ -69,7 +69,7 @@ public static int[] getlX() {
 }
 
 
-public static int[] getlY() {
+public static int[] getlY() { 
 	return lY;
 }
 
@@ -84,7 +84,7 @@ public static int[] getlY() {
     private static boolean seachWay(int[][] arr, Node startPoint,
             Node endPoint, int row, int col) {
         final int CONST_HENG = 10;// 垂直方向或水平方向移动的路径评分
-       
+        map =Map.getMaplog(); 
         Node curNode = startPoint;
         if (startPoint.x < 0 || startPoint.y > col || endPoint.x < 0
                 || endPoint.y > col || arr[startPoint.x][startPoint.y] == 0
@@ -97,7 +97,7 @@ public static int[] getlY() {
             curNode = minList(openList);
             if (curNode.x == endPoint.x && curNode.y == endPoint.y
                     || openList.contains(endPoint)) {
-                //System.out.println("找到最短路径");
+                System.out.println("找到最短路径");
             	int i=0;
                 while(!(curNode.x==startPoint.x&&curNode.y==startPoint.y)){
                 	 
